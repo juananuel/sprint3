@@ -245,7 +245,7 @@
 .contact-email, .contact-whatsapp{
   text-align: center;
   display: flex;
-
+  font-size: 1.15rem;
 }
 
 .contact-email a, .contact-whatsapp a{
@@ -255,7 +255,7 @@
 
 .contact-email a:hover, .contact-whatsapp a:hover{
   color: rgb(255, 59, 131);
-  transition: .3s linear;
+  transition: .2s linear;
 }
 
 .contact-email p, .contact-whatsapp p{

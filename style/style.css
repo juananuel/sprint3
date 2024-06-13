@@ -1,0 +1,381 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.body-container{
+  font-family: "Lato", sans-serif;
+  background-color: rgb(255, 200, 221);
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.head{
+  background-color: rgb(255, 175, 204);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.div-logo{
+  background-color: rgba(255, 59, 131, 0.356);
+  border-radius: 50%;
+}
+
+.div-logo:hover{
+  background-color: rgba(255, 59, 131, 0.6);
+  transition: .2s linear;
+}
+
+.div-li ul{
+  display: flex;
+}
+
+.div-li a{
+  color: #fff;
+  padding: 20px;
+}
+
+.div-li a:hover{
+  color: rgba(137, 43, 226, 0.6);
+  transition: .2s linear;
+}
+
+.div-logo img{
+  width: 50px;
+}
+
+.footer{
+  background-color: rgb(255, 175, 204);
+  text-align: center;
+  padding: 25px;
+  font-size: 1.1rem;
+  color: #005;
+  width: 100%;
+}
+
+/*   index page   */
+
+.index-article{
+  text-align: center;
+}
+
+.index-article-title{
+  padding: 30px;
+  color: rgb(255, 59, 131);
+}
+
+.index-article-title h2{
+  font-size: 2.2rem;
+  font-family: "Indie Flower", cursive;
+}
+
+.index-article-title p{
+  color: rgb(182, 36, 187);
+  font-size: 1.1rem;
+}
+
+.article-img{
+  width: 50vw;
+  max-width: 600px;
+  border-radius: 10px;
+  border: 1px solid blueviolet;
+  box-shadow: 0px 0px 30px rgba(186, 114, 253, 0.7);
+}
+
+.index-section{
+  text-align: center;
+  margin: 60px auto;
+}
+
+.index-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.index-section-p{
+  width: 30%;
+  color: rgb(182, 36, 187);
+  font-size: 1.03rem;
+}
+
+.index-section-p p{
+  text-align: justify;
+}
+
+.index-section-p h3{
+  font-family: "Indie Flower", cursive;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.index-section-img{
+  width: 30%;
+}
+
+.index-section-img img{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid blueviolet;
+  box-shadow: 0px 0px 30px rgba(186, 114, 253, 0.8);
+}
+
+/*  about page  */
+
+.about-container{
+  margin-top: 30px;
+}
+
+.about-title{
+  text-align: center;
+}
+
+.about-title h2{
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 59, 131);
+}
+
+.about-title p{
+  color: rgb(182, 36, 187);
+  font-size: 1.1rem;
+}
+
+.about-container img{
+  width: 250px;
+  max-height: 220px;
+  border-radius: 20px;
+  border: 1px solid blueviolet;
+  box-shadow: 0px 0px 30px rgba(186, 114, 253, 0.8);
+}
+
+.about-content-one,
+.about-content-two, 
+.about-content-three {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 20px;
+}
+
+.about-content-one p,
+.about-content-two p, 
+.about-content-three p {
+  max-width: 400px;
+  text-align: justify;
+  color: rgb(182, 36, 187);
+  font-size: 1.03rem;
+}
+
+.about-content-one h4,
+.about-content-two h4, 
+.about-content-three h4 {
+  color: rgb(182, 36, 187);
+  font-size: 1.5rem;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/*    contact page    */
+
+.contact-container{
+  margin-top: 30px;
+  height: 100vh;
+  width: 100%;
+}
+
+.contact-title{
+  text-align: center;
+}
+
+.contact-title h2{
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 59, 131);
+}
+
+.contact-title p{
+  color: rgb(182, 36, 187);
+  font-size: 1.1rem;
+}
+
+.contact-img{
+  margin: 50px;
+  text-align: center;
+}
+
+.contact-img img{
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.3);
+  width: 400px;
+  height: 300px;
+}
+
+.contact-p{
+  text-align: center;
+  margin: 10px auto;
+  color: rgb(182, 36, 187);
+  font-size: 1.05rem;
+}
+
+.contact-rrss{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+.contact-email, .contact-whatsapp{
+  text-align: center;
+  display: flex;
+
+}
+
+.contact-email a, .contact-whatsapp a{
+  margin: 0px 10px;
+  color: rgb(182, 36, 187);
+}
+
+.contact-email a:hover, .contact-whatsapp a:hover{
+  color: rgb(255, 59, 131);
+  transition: .3s linear;
+}
+
+.contact-email p, .contact-whatsapp p{
+  color: rgb(255, 59, 131);
+}
+
+/*   information page   */
+
+.info-container{
+  text-align: center;
+  margin-top: 30px;
+  height: 100vh;
+  width: 100%;
+}
+
+.info-container h2{
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 59, 131);
+}
+
+.info-container p{
+  color: rgb(182, 36, 187);
+  font-size: 1.1rem;
+}
+
+.info-table{
+  margin: 50px auto;
+  height: 30%;
+  width: 30%;
+  max-width: 500px;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.1);
+}
+
+.info-table thead{
+  background-color: rgba(137, 43, 226, 0.233);
+}
+
+.info-table th, td{
+  border: 1px solid rgb(182, 36, 187);
+  padding: 15px;
+}
+
+.info-table td{
+  color: blueviolet;
+}
+
+.info-table td:first-child{
+  text-align: justify;
+}
+
+/*    benefits page    */
+
+.benefits-container{
+  height: 100vh;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.benefits-container h2, p{
+  text-align: center;
+}
+
+.benefits-container h2{
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 59, 131);
+}
+
+.benefits-container p{
+  color: rgb(182, 36, 187);
+  font-size: 1.1rem;
+}
+
+.benefits-list{
+  margin: 50px auto;
+  width: 900px;
+}
+
+.benefits-list-div-uno, .benefits-list-div-dos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 50px;
+  padding: 20px;
+  border: 1px solid rgb(182, 36, 187);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.2);
+  font-size: 1.03rem;
+}
+
+.benefits-list-div-uno img, .benefits-list-div-dos img{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.2);
+}
+
+.bl-ul{
+  width: 400px;
+}
+
+.bl-ul>li{
+  list-style: inside;
+  color: rgb(103, 4, 196);
+}
+
+.span-li{
+  font-size: 1.2rem;
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+}
+
+.bl-ul-ul{
+  margin-left: 40px;
+}
+
+.bl-ul-ul>li{
+  list-style: circle;
+  color: rgb(182, 36, 187);
+}

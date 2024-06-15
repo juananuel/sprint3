@@ -79,7 +79,7 @@
 }
 
 .index-article-title h2{
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: "Indie Flower", cursive;
 }
 
@@ -195,14 +195,13 @@
 
 /*    contact page    */
 
-.contact-container{
+/* .contact-container{
   margin-top: 30px;
-  height: 100vh;
-  width: 100%;
-}
+} */
 
 .contact-title{
   text-align: center;
+  margin-top: 30px;
 }
 
 .contact-title h2{
@@ -311,8 +310,6 @@
 /*    benefits page    */
 
 .benefits-container{
-  height: 100vh;
-  width: 100%;
   margin-top: 30px;
 }
 
@@ -379,3 +376,86 @@
   list-style: circle;
   color: rgb(182, 36, 187);
 }
+
+/*     raffle page     */
+
+.raffle-title{
+  text-align: center;
+  margin: 30px;
+}
+
+.raffle-title h2{
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 59, 131);
+}
+
+.raffle-title p{
+  color: rgb(182, 36, 187);
+  font-size: 1.1rem;
+}
+
+.raffle-map{
+  text-align: center;
+}
+
+.raffle-map p{
+  color: rgb(182, 36, 187);
+  font-size: 1.3rem;
+  margin: 20px;
+}
+
+.raffle-map iframe{
+  border-radius: 5px;
+}
+
+.raffle-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 50px 0px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 17px;
+  
+  border: 1px solid rgb(182, 36, 187);
+  border-radius: 10px;
+  background-color: rgba(255, 59, 206, 0.05);
+
+  width: 350px;
+}
+
+.form-p{
+  text-align: left;
+}
+
+#fname, #lname, #select, #date{
+  background-color: #fbfbfb;
+  border: #fbfbfb;
+  height: 25px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.form textarea{
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.fieldset-button{
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fieldset-button button{
+  padding: 2px 12px;
+  color: rgb(74, 31, 114);
+}
+

@@ -31,9 +31,77 @@
 
   </header>
 
-  <div>
-    Raffle
-  </div>
+  <main class="raffle-container">
+    
+    <section class="raffle-title">
+      <h2>Raffle</h2>
+      <p>You can collaborate to hold an exhibition event and participate in a raffle to win an easel</p>
+    </section>
+
+    <div class="raffle-content">
+
+      <div class="raffle-map">
+
+        <p>Our location is located at:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5559.27090234635!2d-118.24435801373465!3d34.055098338461576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c64f2be6c8bf%3A0xc3e4fe777d9ee6dd!2sCity%20Hall%20Park%20Center!5e0!3m2!1ses-419!2sar!4v1718376273724!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+
+      <div class="raffle-form">
+
+        <form name="form" action="./show_data.html" method="get" class="form" id="form">				
+          
+          <label for="fname">First Name</label>
+          <input type="text" name="name" id="fname" placeholder="Your first name" >
+          
+          <label for="lname">Last Name</label>
+          <input type="text" name="name" id="lname" placeholder="Your last name">
+
+          <label for="select">Choose Meet or Zoom</label>
+          <select name="select" id="select">
+            <option value="meet">Meet</option>
+            <option value="zoom">Zoom</option>
+          </select>
+
+          <label for="date">Choose Date</label>
+          <input type="date" name="date" id="date">
+
+          <p class="form-p">Payment Options</p>
+
+          <label for="radio1" class="input-radio">
+            <input type="radio" name="radio" id="radio1">
+            <span class="radio-p">Cash</span>
+          </label>
+
+          <label for="radio2" class="input-radio">
+            <input type="radio" name="radio" id="radio2">
+            Credit Card
+          </label>
+
+          <label for="radio3" class="input-radio">
+            <input type="radio" name="radio" id="radio3">
+            Debit Card
+          </label>
+
+          <label for="message">Message (Optional)</label> 
+          <textarea name="message" id="message" rows="10" placeholder="Leave your message here..."></textarea> 
+
+          <fieldset class="fieldset-button">
+            <label for="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox">
+              I accept terms and conditions...
+            </label>
+  
+            <button type="submit" name="send" id="send">Send</button>
+          </fieldset>
+          
+        </form>
+
+      </div>
+
+    </div>
+
+  </main>
 
   <footer class="footer">
     <p>Created by <span>Juan Anuel.</span>  <span>* Mindhub &copy; 2024 *</span></p>

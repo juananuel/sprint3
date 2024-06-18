@@ -32,12 +32,13 @@
   z-index: 1;
 }
 
-.div-logo{
+.div-logo img{
   background-color: rgba(255, 59, 131, 0.356);
+  width: 50px;
   border-radius: 50%;
 }
 
-.div-logo:hover{
+.div-logo img:hover{
   background-color: rgba(255, 59, 131, 0.6);
   transition: .2s linear;
 }
@@ -48,16 +49,12 @@
 
 .div-li a{
   color: #fff;
-  padding: 20px;
+  margin: 20px;
 }
 
 .div-li a:hover{
   color: rgba(137, 43, 226, 0.6);
   transition: .2s linear;
-}
-
-.div-logo img{
-  width: 50px;
 }
 
 .footer{
@@ -67,6 +64,10 @@
   font-size: 1.1rem;
   color: #005;
   width: 100%;
+}
+
+.footer span{
+  font-weight: 600;
 }
 
 /*   index page   */
@@ -91,7 +92,7 @@
 }
 
 .article-img{
-  width: 50vw;
+  width: 60vw;
   max-width: 600px;
   border-radius: 10px;
   border: 1px solid blueviolet;
@@ -110,9 +111,10 @@
 }
 
 .index-section-p{
-  width: 30%;
+  width: 40%;
   color: rgb(182, 36, 187);
   font-size: 1.03rem;
+  max-width: 400px;
 }
 
 .index-section-p p{
@@ -172,7 +174,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   margin: 20px;
 }
 
@@ -183,16 +184,6 @@
   text-align: justify;
   color: rgb(182, 36, 187);
   font-size: 1.03rem;
-}
-
-.about-content-one h4,
-.about-content-two h4, 
-.about-content-three h4 {
-  color: rgb(182, 36, 187);
-  font-size: 1.5rem;
-  font-family: "Indie Flower", cursive;
-  text-align: center;
-  padding-bottom: 15px;
 }
 
 /*    contact page    */
@@ -286,7 +277,7 @@
 .info-table{
   margin: 50px auto;
   height: 30%;
-  width: 30%;
+  width: 50%;
   max-width: 500px;
   border-collapse: collapse;
   box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.1);
@@ -333,7 +324,8 @@
 
 .benefits-list{
   margin: 50px auto;
-  width: 900px;
+  width: 70vw;
+  max-width: 900px;
 }
 
 .benefits-list-div-uno, .benefits-list-div-dos{
@@ -354,6 +346,7 @@
   height: 200px;
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.2);
+  margin-right: 10px;
 }
 
 .bl-ul{
@@ -460,5 +453,146 @@
 .fieldset-button button{
   padding: 2px 12px;
   color: rgb(74, 31, 114);
+}
+
+
+/*     media queries     */
+
+@media screen and (max-width: 1024px) {
+
+  /*  benefits  */
+
+  .benefits-list-div-uno li, .benefits-list-div-dos li{
+    font-size: 0.9rem;
+  }
+  
+  .benefits-list-div-uno img, .benefits-list-div-dos img{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  /*  benefits  */
+
+  .benefits-list-div-uno, .benefits-list-div-dos{
+    flex-direction: column;
+  }
+  .bl-div-dos{
+    width: 285px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .head{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .div-li ul{
+    flex-direction: column;
+  }
+
+  .footer{
+    font-size: 0.8rem;
+  }
+
+  /*  index  */
+
+  .index-section{
+    flex-direction: column-reverse;
+  }
+
+  .index-section-img{
+    width: 40%;
+  }
+  
+  .index-section-img img{
+    margin-bottom: 30px;
+  }
+
+  /*  about  */
+
+  .about-content-one,
+  .about-content-two, 
+  .about-content-three {
+    flex-direction: column;
+  }
+
+  .about-content-one img,
+  .about-content-two img, 
+  .about-content-three img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .about-content-one p,
+  .about-content-two p, 
+  .about-content-three p {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  /*  contact  */
+
+  .contact-img{
+    margin: 50px 0px;
+  }
+
+  .contact-img img{
+    width: 300px;
+    height: 200px;
+  }
+
+  .contact-rrss{
+    flex-direction: column;
+  }
+
+  .contact-rrss div{
+    margin: 8px 0px;
+  }
+
+  /*  benefits  */
+
+  /*  raffle  */
+
+  .raffle-content{
+    flex-direction: column-reverse;
+  }
+
+  .raffle-title p{
+    font-size: 1rem;
+  }
+  
+  .raffle-map iframe{
+    width: 350px;
+    height: 250px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  /*  contact  */
+
+  .contact-p {
+    font-size: 0.9rem;
+  }
+
+  /*  raffle  */
+
+  .raffle-map iframe{
+    width: 300px;
+    height: 200px;
+  }
+
+  /*  raffle  */
+
+  .form{
+    width: 300px;
+  }
+
 }
 

@@ -323,9 +323,14 @@
 }
 
 .benefits-list{
-  margin: 50px auto;
-  width: 70vw;
-  max-width: 900px;
+  margin: 20px auto;
+  width: 70%;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .benefits-list-div-uno, .benefits-list-div-dos{
@@ -333,12 +338,15 @@
   justify-content: space-between;
   align-items: center;
 
-  margin: 50px;
+  margin: 40px;
   padding: 20px;
   border: 1px solid rgb(182, 36, 187);
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.2);
   font-size: 1.03rem;
+  min-width: 320px;
+
+  width: 100%;
 }
 
 .benefits-list-div-uno img, .benefits-list-div-dos img{
@@ -349,26 +357,20 @@
   margin-right: 10px;
 }
 
-.bl-ul{
-  width: 400px;
+.bl-div-dos{
+  width: 50%;
 }
 
-.bl-ul>li{
-  list-style: inside;
+.bl-div-dos h3{
   color: rgb(103, 4, 196);
-}
-
-.span-li{
-  font-size: 1.2rem;
   font-family: "Indie Flower", cursive;
-  font-weight: 600;
 }
 
-.bl-ul-ul{
+.bl-ul{
   margin-left: 40px;
 }
 
-.bl-ul-ul>li{
+.bl-ul>li{
   list-style: circle;
   color: rgb(182, 36, 187);
 }
@@ -458,31 +460,6 @@
 
 /*     media queries     */
 
-@media screen and (max-width: 1024px) {
-
-  /*  benefits  */
-
-  .benefits-list-div-uno li, .benefits-list-div-dos li{
-    font-size: 0.9rem;
-  }
-  
-  .benefits-list-div-uno img, .benefits-list-div-dos img{
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-
-  /*  benefits  */
-
-  .benefits-list-div-uno, .benefits-list-div-dos{
-    flex-direction: column;
-  }
-  .bl-div-dos{
-    width: 285px;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .head{
@@ -500,12 +477,17 @@
 
   /*  index  */
 
+  .index-article-img{
+    width: 70%;
+    margin: 0px auto;
+  }
+
   .index-section{
     flex-direction: column-reverse;
   }
 
   .index-section-img{
-    width: 40%;
+    width: 50%;
   }
   
   .index-section-img img{
@@ -555,6 +537,10 @@
   }
 
   /*  benefits  */
+
+    .benefits-list-div-uno, .benefits-list-div-dos{
+    flex-direction: column;
+  }
 
   /*  raffle  */
 
